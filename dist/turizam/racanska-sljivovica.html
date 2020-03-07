@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../css/materialize.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="../css/main.css" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tara</title>
+  </head>
+  <body>
+    <header id="page-top" class="section section-header scrollspy">
+      <!-- Top nav -->
+      <nav class="teal top-nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="../index.html" class="brand-logo"
+              >Ski<span class="teal-text text-darken-4">Tara</span>j</a
+            >
+            <!-- Sidenav Trigger-->
+            <a
+              href="#"
+              data-target="nav-mobile"
+              class="sidenav-trigger hide-on-large-only"
+            >
+              <i class="material-icons">menu</i>
+            </a>
+            <!-- Top nav -->
+            <ul class="nav-content right hide-on-med-and-down">
+              <li>
+                <a
+                  href="#!"
+                  class="dropdown-trigger"
+                  data-target="dropdown-tara"
+                >
+                  <i class="material-icons right">arrow_drop_down</i>
+                  Tara
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#!"
+                  class="dropdown-trigger"
+                  data-target="dropdown-turizam"
+                >
+                  <i class="material-icons right">arrow_drop_down</i>Turizam</a
+                >
+              </li>
+              <li>
+                <a href="../smestaj.html">Smeštaj</a>
+              </li>
+              <li>
+                <a href="../aktivnosti.html">Aktivnosti</a>
+              </li>
+              <li>
+                <a href="../kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Carousel -->
+      <div
+        id="header-carousel"
+        class="section section-carousel carousel carousel-slider"
+      >
+        <a class="carousel-item" href="#!"
+          ><img
+            src="../img/galerija/tara-33.jpg"
+            alt="Photo by Nemanja .O. on Unsplash"
+        /></a>
+        <a class="carousel-item" href="#!"
+          ><img
+            src="../img/galerija/tara-11.jpg"
+            alt="Photo by Nikola Knezevic on Unsplash"
+        /></a>
+        <a class="carousel-item" href="#!"
+          ><img
+            src="../img/galerija/tara-22.jpg"
+            alt="Photo by Velizar Ivanov on Unsplash"
+        /></a>
+        <a class="carousel-item" href="#!"
+          ><img
+            src="../img/galerija/tara-44.jpg"
+            alt="Photo by Paddy Walker on Unsplash"
+        /></a>
+      </div>
+      <!-- Bootom nav - Breadcrumbs -->
+      <nav class="teal lighten-2 bottom-nav">
+        <div class="nav-wrapper">
+          <div class="row">
+            <div class="col m9 l10 s12">
+              <div class="container">
+                <div class="section">
+                  <a href="../turizam.html" class="breadcrumb">Turizam</a>
+                  <a href="racanska-sljivovica.html" class="breadcrumb">
+                    Račanska Šljivovica
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Sidenav -->
+      <ul id="nav-mobile" class="sidenav grey lighten-4">
+        <li>
+          <div class="header-sidenav">
+            <span class="header white-text"
+              >Ski<span class="teal-text text-darken-4">Tara</span>j</span
+            >
+          </div>
+        </li>
+        <li>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header">
+                <span class="material-icons icon-circle">filter_hdr</span>Tara
+              </div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="../index.html#nacionalni-park">Nacionalni park</a>
+                  </li>
+                  <li><a href="../index.html#planina">Planina</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <span class="material-icons icon-circle">nature_people</span
+                >Turizam
+              </div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="kaludjerske-bare.html">Kaluđerske bare</a>
+                  </li>
+                  <li>
+                    <a href="mitrovac-na-tari.html">Mitrovac na Tari</a>
+                  </li>
+                  <li><a href="zaovine.html">Zaovine</a></li>
+                  <li>
+                    <a href="racanska-sljivovica.html">Račanska Šljivovica</a>
+                  </li>
+                  <li><a href="oslusa.html">Osluša</a></li>
+                  <li><a href="sokolina.html">Sokolina</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../smestaj.html"
+            ><span class="material-icons icon-circle">home_work</span>Smeštaj</a
+          >
+        </li>
+        <li>
+          <a href="../aktivnosti.html"
+            ><span class="material-icons icon-circle">directions_bike</span
+            >Aktivnosti</a
+          >
+        </li>
+        <li>
+          <a href="../kontakt.html"
+            ><span class="material-icons icon-circle">contact_mail</span
+            >Kontakt</a
+          >
+        </li>
+      </ul>
+      <!-- Dropdown Tara -->
+      <ul class="dropdown-content" id="dropdown-tara">
+        <li>
+          <a id="dp-nacionalni-park" href="../index.html#nacionalni-park"
+            >Nacionalni park</a
+          >
+        </li>
+        <li><a id="dp-planina" href="../index.html#planina">Planina</a></li>
+      </ul>
+      <!-- Dropdown Turizam -->
+      <ul class="dropdown-content" id="dropdown-turizam">
+        <li>
+          <a href="kaludjerske-bare.html">Kaluđerske bare</a>
+        </li>
+        <li>
+          <a href="mitrovac-na-tari.html">Mitrovac na Tari</a>
+        </li>
+        <li>
+          <a href="zaovine.html">Zaovine</a>
+        </li>
+        <li>
+          <a href="racanska-sljivovica.html">Račanska Šljivovica</a>
+        </li>
+        <li>
+          <a href="oslusa.html">Osluša</a>
+        </li>
+        <li>
+          <a href="sokolina.html">Sokolina</a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Glavni sadrzaj -->
+    <main>
+      <div class="row">
+        <div class="col m9 l10 s12">
+          <!-- Račanska Šljivovica -->
+          <div class="container">
+            <div
+              id="racanska-sljivovica"
+              class="section section-racanska-sljivovica scrollspy"
+            >
+              <h4 class="teal-text heading">Račanska Šljivovica</h4>
+              <p>
+                Naselje Račanska Šljivovica locirano je na putu Kaluđerske
+                Bare-Mitrovac i nastanjena je uglavnom seoskim domaćinstvima i
+                korisnicima vikendica na ovom prostoru. Šljivovica je od Bajine
+                Bašte udaljena 21 kilometra a od Kaluđerskih bara 5.
+              </p>
+              <br />
+              <div class="video-container">
+                <iframe
+                  width="853"
+                  height="480"
+                  src="https://www.youtube.com/embed/3WU-7yz3WYA"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <br />
+              <p>
+                Na široj teritoriji Šljivovice nalazi se i prirodni rezervat –
+                stanište Pančićeve omorike, kao i rezervat mešovite šume jele,
+                smrče i bukve. Turistički centar Šljivovica je za sada
+                nedovoljno iskorišćen i prema autorima Urbanističkog plana za
+                ovo područje treba da ima pretežno rekreativno sportski karakter
+                sa smeštajnim kapacitetima za turizam svih vidova (hotelski,
+                odmarališni, vikend).
+              </p>
+              <p>
+                Prirodne vrednosti i atraktivnost prirodnog predela: specifična
+                morfologija Šljivovice: bogatstvo različitih pejzaža, biljnih
+                vrsta, prisustvo lekovitog bilja, izvora i vodotoka, pećina, kao
+                i neposredna blizina značajnih turističkih lokacija.
+              </p>
+              <p>
+                Iskoristite svoje vreme i prošetajte se trasiranim šumskim
+                stazama. Izuzetno je pogodan teren za planinski biciklizam.
+              </p>
+              <p>
+                U Račanskoj Šljivovici postoji i ski staza i škola skijanja.
+              </p>
+            </div>
+          </div>
+          <!-- Section: Gallery -->
+          <section id="galerija" class="section section-gallery scrollspy">
+            <div class="container">
+              <h4 class="center heading">
+                <span class="teal-text">Galerija</span> slika
+              </h4>
+              <div class="row">
+                <div class="col s12 m3">
+                  <img
+                    src="../img/racanska-sljivovica/rs-1.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                    width="830"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/racanska-sljivovica/rs-2.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                    width="830"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/racanska-sljivovica/rs-3.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                    width="830"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/racanska-sljivovica/rs-4.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                    width="830"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m3">
+                  <img
+                    src="../img/racanska-sljivovica/rs-5.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                    width="830"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/racanska-sljivovica/rs-6.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                    width="830"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/racanska-sljivovica/rs-7.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                    width="830"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/racanska-sljivovica/rs-8.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                    width="830"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m3">
+                  <img
+                    src="../img/racanska-sljivovica/rs-9.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                    width="830"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/racanska-sljivovica/rs-10.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                    width="830"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/racanska-sljivovica/rs-11.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                    width="830"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/racanska-sljivovica/rs-12.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                    width="830"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="col hide-on-small-only m3 l2 s12">
+          <ul id="toc" class="section table-of-contents">
+            <li>
+              <a href="#racanska-sljivovica">Račanska Šljivovica</a>
+            </li>
+            <li>
+              <a href="#galerija">Galerija</a>
+            </li>
+            <!-- <li>
+              <a href="#mitrovac-na-tari">Mitrovac na Tari</a>
+            </li>
+            <li>
+              <a href="#zaovine">Zaovine</a>
+            </li>
+            <li>
+              <a href="#racanska-sljivovica">Račanska Šljivovica</a>
+            </li>
+            <li>
+              <a href="#oslusa">Osluša</a>
+            </li>
+            <li>
+              <a href="#sokolina">Sokolina</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">
+              Želite da provedete odmor na jednoj od najlepših planina Srbije?
+            </h5>
+            <p class="grey-text text-lighten-4">
+              Pogledajte našu ponudu jedinstvenog i autentičnog
+              <a
+                href="smestaj.html"
+                class="btn-flat waves-effect waves-light teal-text text-lighten-4"
+                >smeštaja</a
+              >
+              na području Tare.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">
+              Istražite Ski<span class="teal-text text-darken-4">Tara</span>j:
+            </h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="index.html">Tara</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="turizam.html"
+                  >Turizam</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="smestaj.html"
+                  >Smeštaj</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="aktivnosti.html"
+                  >Aktivnosti</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="kontakt.html"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright teal darken-2">
+        <div class="container valign-wrapper">
+          <div class="row valign-wrapper">
+            <div class="col l6 s12">
+              <p>
+                Za potrebe ovog projekta, sav materijal je preuzet sa
+                <a href="https://tara.rs/sr/" class="teal-text text-lighten-2"
+                  >tara.rs</a
+                >,
+                <a href="https://unsplash.com/" class="teal-text text-lighten-2"
+                  >unsplash.com</a
+                >
+                i
+                <a
+                  href="https://www.nptara.rs/ "
+                  class="teal-text text-lighten-2"
+                  >nptara.rs</a
+                >
+              </p>
+              © 2020 Copyright Ski<span class="teal-text text-darken-4"
+                >Tara</span
+              >j
+            </div>
+            <div class="col l6 s12">
+              <a class="grey-text text-lighten-4 right" href="#page-top"
+                >Početak stranice</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../js/js-custom/turizam/racanska-sljivovica.js"
+    ></script>
+  </body>
+</html>

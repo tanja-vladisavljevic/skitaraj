@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tara</title>
+  </head>
+  <body>
+    <header id="page-top" class="section section-header scrollspy">
+      <!-- Top nav -->
+      <nav class="teal top-nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo"
+              >Ski<span class="teal-text text-darken-4">Tara</span>j</a
+            >
+            <!-- Sidenav Trigger-->
+            <a
+              href="#"
+              data-target="nav-mobile"
+              class="sidenav-trigger hide-on-large-only"
+            >
+              <i class="material-icons">menu</i>
+            </a>
+            <!-- Top nav -->
+            <ul class="nav-content right hide-on-med-and-down">
+              <li>
+                <a
+                  href="#!"
+                  class="dropdown-trigger"
+                  data-target="dropdown-tara"
+                >
+                  <i class="material-icons right">arrow_drop_down</i>
+                  Tara
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#!"
+                  class="dropdown-trigger"
+                  data-target="dropdown-turizam"
+                >
+                  <i class="material-icons right">arrow_drop_down</i>Turizam</a
+                >
+              </li>
+              <li>
+                <a href="smestaj.html">Smeštaj</a>
+              </li>
+              <li>
+                <a href="aktivnosti.html">Aktivnosti</a>
+              </li>
+              <li>
+                <a href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Carousel -->
+      <div
+        id="header-carousel"
+        class="section section-carousel carousel carousel-slider"
+      >
+        <a class="carousel-item" href="#!"
+          ><img
+            src="img/galerija/tara-33.jpg"
+            alt="Photo by Nemanja .O. on Unsplash"
+        /></a>
+        <a class="carousel-item" href="#!"
+          ><img
+            src="img/galerija/tara-11.jpg"
+            alt="Photo by Nikola Knezevic on Unsplash"
+        /></a>
+        <a class="carousel-item" href="#!"
+          ><img
+            src="img/galerija/tara-22.jpg"
+            alt="Photo by Velizar Ivanov on Unsplash"
+        /></a>
+        <a class="carousel-item" href="#!"
+          ><img
+            src="img/galerija/tara-44.jpg"
+            alt="Photo by Paddy Walker on Unsplash"
+        /></a>
+      </div>
+      <!-- Weather widget -->
+      <div
+        id="ac84fbc1cae25f4a5621862b6df0988a"
+        class="ww-informers-box-854753"
+      >
+        <p class="ww-informers-box-854754">
+          <a
+            href="https://world-weather.info/forecast/serbia/bajina_basta/month/"
+            >Bajina Bašta - weather forecast</a
+          ><br /><a href="https://world-weather.info/forecast/usa/houston_11/"
+            >https://world-weather.info/forecast/usa/houston_11/</a
+          >
+        </p>
+      </div>
+      <!-- Sidenav -->
+      <ul id="nav-mobile" class="sidenav grey lighten-4">
+        <li>
+          <div class="header-sidenav">
+            <span class="header white-text"
+              >Ski<span class="teal-text text-darken-4">Tara</span>j</span
+            >
+          </div>
+        </li>
+        <li>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header">
+                <span class="material-icons icon-circle">filter_hdr</span>Tara
+              </div>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a href="#nacionalni-park">Nacionalni park</a></li>
+                  <li><a href="#planina">Planina</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <span class="material-icons icon-circle">nature_people</span
+                >Turizam
+              </div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="turizam/kaludjerske-bare.html">Kaluđerske bare</a>
+                  </li>
+                  <li>
+                    <a href="turizam/mitrovac-na-tari.html">Mitrovac na Tari</a>
+                  </li>
+                  <li><a href="turizam/zaovine.html">Zaovine</a></li>
+                  <li>
+                    <a href="turizam/racanska-sljivovica.html"
+                      >Račanska Šljivovica</a
+                    >
+                  </li>
+                  <li><a href="turizam/oslusa.html">Osluša</a></li>
+                  <li><a href="turizam/sokolina.html">Sokolina</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="smestaj.html"
+            ><span class="material-icons icon-circle">home_work</span>Smeštaj</a
+          >
+        </li>
+        <li>
+          <a href="aktivnosti.html"
+            ><span class="material-icons icon-circle">directions_bike</span
+            >Aktivnosti</a
+          >
+        </li>
+        <li>
+          <a href="kontakt.html"
+            ><span class="material-icons icon-circle">contact_mail</span
+            >Kontakt</a
+          >
+        </li>
+      </ul>
+      <!-- Dropdown Tara -->
+      <ul class="dropdown-content" id="dropdown-tara">
+        <li>
+          <a id="dp-nacionalni-park" href="#nacionalni-park">Nacionalni park</a>
+        </li>
+        <li><a id="dp-planina" href="#planina">Planina</a></li>
+      </ul>
+      <!-- Dropdown Turizam -->
+      <ul class="dropdown-content" id="dropdown-turizam">
+        <li>
+          <a href="turizam/kaludjerske-bare.html">Kaluđerske bare</a>
+        </li>
+        <li>
+          <a href="turizam/mitrovac-na-tari.html">Mitrovac na Tari</a>
+        </li>
+        <li>
+          <a href="turizam/zaovine.html">Zaovine</a>
+        </li>
+        <li>
+          <a href="turizam/racanska-sljivovica.html">Račanska Šljivovica</a>
+        </li>
+        <li>
+          <a href="turizam/oslusa.html">Osluša</a>
+        </li>
+        <li>
+          <a href="turizam/sokolina.html">Sokolina</a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Glavni sadrzaj -->
+    <main>
+      <div class="row">
+        <div class="col m9 l10 s12">
+          <div class="container">
+            <div
+              id="nacionalni-park"
+              class="section section-nacionalni-park scrollspy"
+            >
+              <h4 class="teal-text">Nacionalni park</h4>
+              <p>
+                Prostor Tare proglašen je
+                <span class="teal-text"
+                  ><strong>Nacionalnim parkom</strong></span
+                >
+                13. jula 1981. godine na površini od 19.175,00 ha, od 5. oktobra
+                2015. godine teritorija parka je proširena i sada zauzima
+                24.991,82 ha.
+              </p>
+              <p>
+                Šire područje Tare identifikovano je kao: <br />
+                - područje značajno za biljke (Important Plant Areas – IPA),
+                <br />
+                - područje značajno za ptice – (Important Bird Areas – IBA),
+                <br />
+                - područje značajno za dnevne leptire u Srbiji (Prime Butterfly
+                Areas in Serbia – PBA), <br />- pilot područje za NATURA 2000 u
+                Srbiji, <br />
+                - područje značajno u okviru EMERALD mreže.
+              </p>
+              <blockquote>
+                Nacionalni park Tara sa Parkom prirode Šargan - Mokra Gora,
+                Parkom prirode Zlatibor i Nacionalnim parkom Drina u Republici
+                Srpskoj (BiH) je predviđen za potencijalni prekogranični
+                rezervat biosfere u okviru UNESKO-vog programa "Čovek i
+                biosfera".
+              </blockquote>
+              <br />
+              <div class="video-container">
+                <iframe
+                  width="853"
+                  height="480"
+                  src="https://www.youtube.com/embed/2BjJ1JEFF98"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <br />
+              <p>
+                Ovo je tipično šumsko područje, a po očuvanosti i raznovrsnosti
+                šumskih ekosistema, od kojih su mnogi reliktnog karaktera, spada
+                u najbogatija i najvrednija šumska područja Evrope. Na Tari
+                dominiraju mešovite šume smrče, jele i bukve (preko 85% šumskih
+                površina), a specifičnost u odnosu na druge planine Balkanskog
+                poluostrva predstavlja veliki broj reliktnih i endemičnih
+                šumskih vrsta i zajednica.
+              </p>
+              <p>
+                Na Tari je identifikovano preko 40 lišćarskih,
+                lišćarsko-četinarskih i četinarskih fitocenoza, zatim 1156 vrsta
+                vaskularne flore što čini 1/3 ukupne flore Srbije. Od
+                zastupljenih biljnih vrsta 76 su endemične vrste. Posebnu
+                vrednost i značaj ima Pančićeva omorika (Picea omorika),
+                endemična i reliktna vrsta, koja je kanjonima i klisurama
+                srednjeg toka rek Drine uspela da preživi zadnje ledeno doba.
+              </p>
+              <p>
+                Prema rezultatima dosadašnjih istraživanja, područje Tare
+                naseljava 59 vrsta sisara, oko 140 vrsta ptica, 12 vrsta
+                vodozemaca, 12 vrsta gmizavaca i 19 vrsta riba. Ovde je
+                nastanjena najveća populacije mrkog medveda u Srbiji, a od 2006.
+                godine vršimo monitoring ove vrste. Najpoznatija vrsta, za koju
+                se može reći da je simbol faune beskičmenjaka Tare je
+                endemorelikt Pančićev skakavac (Pyrgomorphulla serbica).
+              </p>
+              <p>
+                Na području parka nalaze se brojni arheološki lokaliteti i
+                spomenici kulture koji datiraju od neolita pa do savremenog
+                doba. Najznačajniji spomenik je manastir Rača, zadužbina kralja
+                Dragutina iz 13. veka, koji je jedan od najznačajnijih centara
+                srpske srednjovekovne pismenosti. Naravno, tu su i
+                srednjovekovne nekropole sa stećcima u Rastištu i Perućcu koje
+                su 2016. godine u okviru zajedničkog projekta Srbije, Bosne i
+                Hercegovine, Hrvatske i Crne Gore stavljene na UNESKO-vu listu
+                svetske kulturne baštine.
+              </p>
+            </div>
+          </div>
+
+          <div class="container">
+            <div id="planina" class="section section-planina scrollspy">
+              <h4 class="teal-text">Planina</h4>
+              <p>
+                Planina Tara predstavlja površ dinarskog pravca pružanja.
+                Pripada delu starovlaških planina (Starovlaška-raška visija).
+                Nalazi se na krajnjem zapadu Srbije zahvatajući područje
+                ograničeno laktastim tokom Drine između Višegrada i Bajine
+                Bašte. U najužem delu masiva smeštena je planina Zvijezda, koja
+                je od Tare prirodno odvojena Klisurom Dervente. Po nadmorskim
+                visinama, Tara spada u srednje visoke planine, čija je prosečna
+                nadmorska visina 1.000 – 1.200 metara. Najviši vrh Nacionalnog
+                parka je Kozji rid – 1.591 metar, a najviši vrh planine Tare je
+                Zborište 1.544 metra.
+              </p>
+              <br />
+              <div class="video-container">
+                <iframe
+                  width="853"
+                  height="480"
+                  src="https://www.youtube.com/embed/DTfjBXaig2A"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <br />
+              <p>
+                Područje se nalazi između 43<span>&#176;</span>52′ i
+                44<span>&#176;</span>02′ severne geografske širine i
+                19<span>&#176;</span>15′ i 19<span>&#176;</span>38′ istočne
+                geografske dužine od Griniča.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col hide-on-small-only m3 l2 s12">
+          <ul id="toc" class="section table-of-contents">
+            <li>
+              <a href="#nacionalni-park">Nacionalni park</a>
+            </li>
+            <li>
+              <a href="#planina">Planina</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <!-- Bottom sheet modal: Cookies -->
+    <div id="modal-bottom-cookie" class="modal bottom-sheet">
+      <div>
+        <p class="center">
+          Ovaj sajt koristi kolačiće (eng. cookies). Kolačići nam omogućuju da
+          vas razlikujemo od ostalih korisnika sajta. Oni nam pomažu da vam
+          prilikom posete sajtu omogućimo kvalitetnu uslugu, kao i da unapredimo
+          naš sajt.
+        </p>
+      </div>
+      <div class="modal-footer center">
+        <a
+          href="#!"
+          class="modal-action modal-close waves-effect waves-light btn teal"
+          >Razumem</a
+        >
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">
+              Želite da provedete odmor na jednoj od najlepših planina Srbije?
+            </h5>
+            <p class="grey-text text-lighten-4">
+              Pogledajte našu ponudu jedinstvenog i autentičnog
+              <a
+                href="smestaj.html"
+                class="btn-flat waves-effect waves-light teal-text text-lighten-4"
+                >smeštaja</a
+              >
+              na području Tare.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">
+              Istražite Ski<span class="teal-text text-darken-4">Tara</span>j:
+            </h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="index.html">Tara</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="turizam.html"
+                  >Turizam</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="smestaj.html"
+                  >Smeštaj</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="aktivnosti.html"
+                  >Aktivnosti</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="kontakt.html"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright teal darken-2">
+        <div class="container valign-wrapper">
+          <div class="row valign-wrapper">
+            <div class="col l6 s12">
+              <p>
+                Za potrebe ovog projekta, sav materijal je preuzet sa
+                <a href="https://tara.rs/sr/" class="teal-text text-lighten-2"
+                  >tara.rs</a
+                >,
+                <a href="https://unsplash.com/" class="teal-text text-lighten-2"
+                  >unsplash.com</a
+                >
+                i
+                <a
+                  href="https://www.nptara.rs/ "
+                  class="teal-text text-lighten-2"
+                  >nptara.rs</a
+                >
+              </p>
+              © 2020 Copyright Ski<span class="teal-text text-darken-4"
+                >Tara</span
+              >j
+            </div>
+            <div class="col l6 s12">
+              <a class="grey-text text-lighten-4 right" href="#page-top"
+                >Početak stranice</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- Weather Widget -->
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      src="https://world-weather.info/wwinformer.php?userid=ac84fbc1cae25f4a5621862b6df0988a"
+    ></script>
+    <script type="text/javascript" src="js/js-custom/index.js"></script>
+  </body>
+</html>
