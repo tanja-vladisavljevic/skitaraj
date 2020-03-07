@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../css/materialize.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="../css/main.css" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tara</title>
+  </head>
+  <body>
+    <header id="page-top" class="section section-header scrollspy">
+      <!-- Top nav -->
+      <nav class="teal top-nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="../index.html" class="brand-logo"
+              >Ski<span class="teal-text text-darken-4">Tara</span>j</a
+            >
+            <!-- Sidenav Trigger-->
+            <a
+              href="#"
+              data-target="nav-mobile"
+              class="sidenav-trigger hide-on-large-only"
+            >
+              <i class="material-icons">menu</i>
+            </a>
+            <!-- Top nav -->
+            <ul class="nav-content right hide-on-med-and-down">
+              <li>
+                <a
+                  href="#!"
+                  class="dropdown-trigger"
+                  data-target="dropdown-tara"
+                >
+                  <i class="material-icons right">arrow_drop_down</i>
+                  Tara
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#!"
+                  class="dropdown-trigger"
+                  data-target="dropdown-turizam"
+                >
+                  <i class="material-icons right">arrow_drop_down</i>Turizam</a
+                >
+              </li>
+              <li>
+                <a href="../smestaj.html">Smeštaj</a>
+              </li>
+              <li>
+                <a href="../aktivnosti.html">Aktivnosti</a>
+              </li>
+              <li>
+                <a href="../kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Carousel -->
+      <div
+        id="header-carousel"
+        class="section section-carousel carousel carousel-slider"
+      >
+        <a class="carousel-item" href="#!"
+          ><img
+            src="../img/galerija/tara-33.jpg"
+            alt="Photo by Nemanja .O. on Unsplash"
+        /></a>
+        <a class="carousel-item" href="#!"
+          ><img
+            src="../img/galerija/tara-11.jpg"
+            alt="Photo by Nikola Knezevic on Unsplash"
+        /></a>
+        <a class="carousel-item" href="#!"
+          ><img
+            src="../img/galerija/tara-22.jpg"
+            alt="Photo by Velizar Ivanov on Unsplash"
+        /></a>
+        <a class="carousel-item" href="#!"
+          ><img
+            src="../img/galerija/tara-44.jpg"
+            alt="Photo by Paddy Walker on Unsplash"
+        /></a>
+      </div>
+      <!-- Bootom nav - Breadcrumbs -->
+      <nav class="teal lighten-2 bottom-nav">
+        <div class="nav-wrapper">
+          <div class="row">
+            <div class="col m9 l10 s12">
+              <div class="container">
+                <div class="section">
+                  <a href="../turizam.html" class="breadcrumb">Turizam</a>
+                  <a href="kaludjerske-bare.html" class="breadcrumb">
+                    Kaluđerske bare
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Sidenav -->
+      <ul id="nav-mobile" class="sidenav grey lighten-4">
+        <li>
+          <div class="header-sidenav">
+            <span class="header white-text"
+              >Ski<span class="teal-text text-darken-4">Tara</span>j</span
+            >
+          </div>
+        </li>
+        <li>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header">
+                <span class="material-icons icon-circle">filter_hdr</span>Tara
+              </div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="../index.html#nacionalni-park">Nacionalni park</a>
+                  </li>
+                  <li><a href="../index.html#planina">Planina</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <span class="material-icons icon-circle">nature_people</span
+                >Turizam
+              </div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="kaludjerske-bare.html">Kaluđerske bare</a>
+                  </li>
+                  <li>
+                    <a href="mitrovac-na-tari.html">Mitrovac na Tari</a>
+                  </li>
+                  <li><a href="zaovine.html">Zaovine</a></li>
+                  <li>
+                    <a href="racanska-sljivovica.html">Račanska Šljivovica</a>
+                  </li>
+                  <li><a href="oslusa.html">Osluša</a></li>
+                  <li><a href="sokolina.html">Sokolina</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="../smestaj.html"
+            ><span class="material-icons icon-circle">home_work</span>Smeštaj</a
+          >
+        </li>
+        <li>
+          <a href="../aktivnosti.html"
+            ><span class="material-icons icon-circle">directions_bike</span
+            >Aktivnosti</a
+          >
+        </li>
+        <li>
+          <a href="../kontakt.html"
+            ><span class="material-icons icon-circle">contact_mail</span
+            >Kontakt</a
+          >
+        </li>
+      </ul>
+      <!-- Dropdown Tara -->
+      <ul class="dropdown-content" id="dropdown-tara">
+        <li>
+          <a id="dp-nacionalni-park" href="../index.html#nacionalni-park"
+            >Nacionalni park</a
+          >
+        </li>
+        <li><a id="dp-planina" href="../index.html#planina">Planina</a></li>
+      </ul>
+      <!-- Dropdown Turizam -->
+      <ul class="dropdown-content" id="dropdown-turizam">
+        <li>
+          <a href="kaludjerske-bare.html">Kaluđerske bare</a>
+        </li>
+        <li>
+          <a href="mitrovac-na-tari.html">Mitrovac na Tari</a>
+        </li>
+        <li>
+          <a href="zaovine.html">Zaovine</a>
+        </li>
+        <li>
+          <a href="racanska-sljivovica.html">Račanska Šljivovica</a>
+        </li>
+        <li>
+          <a href="oslusa.html">Osluša</a>
+        </li>
+        <li>
+          <a href="sokolina.html">Sokolina</a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Glavni sadrzaj -->
+    <main>
+      <div class="row">
+        <div class="col m9 l10 s12">
+          <!-- Kaludjerske bare -->
+          <div class="container">
+            <div
+              id="kaludjerske-bare"
+              class="section section-kaludjerske-bare scrollspy"
+            >
+              <h4 class="teal-text heading">Kaluđerske bare</h4>
+              <p>
+                Kaluđerske Bare su udaljene od Bajine Bašte 16 kilometara. To je
+                jugistočni deo Tare kao i najpoznatiji turistički centar. Na
+                krečnjačkoj podlozi rastu prelepe šume crnog, belog bora, jele,
+                smrče… Kaluđerske bare su u turističkom smislu možda najlepši
+                deo Tare i nalaze na nadmorskoj visini od 1059 m. Postoje
+                uređene pešačke staze, sportski tereni, trim staze kao i staze
+                za skijanje i sankanje.
+              </p>
+              <br />
+              <div class="video-container">
+                <iframe
+                  width="853"
+                  height="480"
+                  src="https://www.youtube.com/embed/BsbM5FOpBas"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <br />
+              <p>
+                Na Kaluđerskim barama se nalaze hoteli Omorika, Beli bor i Javor
+                a pored njih nalaze se lepo uređeni privatni kapaciteti sa
+                sobama i apartmanima različitih kategorija. Na Kaluđerskim
+                Barama nalazi se nekoliko privatnih trgovinskih radnji,
+                restorana i benzinska pumpa.
+              </p>
+              <p>
+                U blizini hotela izgrađeni su za potrebe savremenog turizma
+                sportsko-rekreativni objekti na otvorenom prostoru: igralište za
+                male sportove, dečija igrališta, trim staza, ski tereni, teniska
+                igrališta i travnato fudbalsko igralište, koje omogućava
+                kvalitetne visinske pripreme sportskih ekipa.
+              </p>
+              <p>
+                Ski staza se nalazi pored restorana “Kurta”. U zimskom periodu
+                gosti mogu da skijaju na ski stazama koje se nalaze neposredno
+                uz hotel »Beli bor«, na nadmorskoj visini od 1.000 m. Tu su i
+                dva ski lifta, i to jedan za decu i početnike dužine 150 m i
+                drugi za skijaše rekreativce, dužine 450 m.
+              </p>
+              <p>
+                Na Kaluđerskim barama postoje i staze za sankanje a kod
+                manastirskih stanova se nalazi ergela konja gde možete naučiti
+                da jašete a postoji i mogućnost iznajmljivanja konja za
+                rekreatvno jahanje.
+              </p>
+              <p>
+                Na Kaluđerskim barama su locirani hoteli vojne ustanove: –
+                Omorika i – Beli bor. Pored objekata Vojne ustanove “Tara” tu je
+                i velika ponuda privatnog smeštaja.
+              </p>
+              <p>
+                Na ovoj lokaciji nalazi se i dosta uređenih privatnih objekata
+                za smeštaj svih kategorija.
+              </p>
+            </div>
+          </div>
+          <!-- Section: Gallery -->
+          <section id="galerija" class="section section-gallery scrollspy">
+            <div class="container">
+              <h4 class="center heading">
+                <span class="teal-text">Galerija</span> slika
+              </h4>
+              <div class="row">
+                <div class="col s12 m3">
+                  <img
+                    src="../img/kaludjerske-bare/kb-1.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/kaludjerske-bare/kb-2.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/kaludjerske-bare/kb-3.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/kaludjerske-bare/kb-4.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m3">
+                  <img
+                    src="../img/kaludjerske-bare/kb-5.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/kaludjerske-bare/kb-6.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/kaludjerske-bare/kb-7.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/kaludjerske-bare/kb-8.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col s12 m3">
+                  <img
+                    src="../img/kaludjerske-bare/kb-9.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/kaludjerske-bare/kb-10.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/kaludjerske-bare/kb-11.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                  />
+                </div>
+                <div class="col s12 m3">
+                  <img
+                    src="../img/kaludjerske-bare/kb-12.jpg"
+                    alt=""
+                    class="materialboxed responsive-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="col hide-on-small-only m3 l2 s12">
+          <ul id="toc" class="section table-of-contents">
+            <li>
+              <a href="#kaludjerske-bare">Kaluđerske bare</a>
+            </li>
+            <li>
+              <a href="#galerija">Galerija</a>
+            </li>
+            <!-- <li>
+              <a href="#mitrovac-na-tari">Mitrovac na Tari</a>
+            </li>
+            <li>
+              <a href="#zaovine">Zaovine</a>
+            </li>
+            <li>
+              <a href="#racanska-sljivovica">Račanska Šljivovica</a>
+            </li>
+            <li>
+              <a href="#oslusa">Osluša</a>
+            </li>
+            <li>
+              <a href="#sokolina">Sokolina</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">
+              Želite da provedete odmor na jednoj od najlepših planina Srbije?
+            </h5>
+            <p class="grey-text text-lighten-4">
+              Pogledajte našu ponudu jedinstvenog i autentičnog
+              <a
+                href="smestaj.html"
+                class="btn-flat waves-effect waves-light teal-text text-lighten-4"
+                >smeštaja</a
+              >
+              na području Tare.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">
+              Istražite Ski<span class="teal-text text-darken-4">Tara</span>j:
+            </h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="index.html">Tara</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="turizam.html"
+                  >Turizam</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="smestaj.html"
+                  >Smeštaj</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="aktivnosti.html"
+                  >Aktivnosti</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="kontakt.html"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright teal darken-2">
+        <div class="container valign-wrapper">
+          <div class="row valign-wrapper">
+            <div class="col l6 s12">
+              <p>
+                Za potrebe ovog projekta, sav materijal je preuzet sa
+                <a href="https://tara.rs/sr/" class="teal-text text-lighten-2"
+                  >tara.rs</a
+                >,
+                <a href="https://unsplash.com/" class="teal-text text-lighten-2"
+                  >unsplash.com</a
+                >
+                i
+                <a
+                  href="https://www.nptara.rs/ "
+                  class="teal-text text-lighten-2"
+                  >nptara.rs</a
+                >
+              </p>
+              © 2020 Copyright Ski<span class="teal-text text-darken-4"
+                >Tara</span
+              >j
+            </div>
+            <div class="col l6 s12">
+              <a class="grey-text text-lighten-4 right" href="#page-top"
+                >Početak stranice</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../js/js-custom/turizam/kaludjerske-bare.js"
+    ></script>
+  </body>
+</html>

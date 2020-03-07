@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.css"
+      media="screen,projection"
+    />
+    <!-- Import maps leaflet.css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tara</title>
+  </head>
+  <body>
+    <header id="page-top" class="section section-header scrollspy">
+      <!-- Top nav -->
+      <nav class="teal top-nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo"
+              >Ski<span class="teal-text text-darken-4">Tara</span>j</a
+            >
+            <!-- Sidenav Trigger-->
+            <a
+              href="#"
+              data-target="nav-mobile"
+              class="sidenav-trigger hide-on-large-only"
+            >
+              <i class="material-icons">menu</i>
+            </a>
+            <!-- Top nav -->
+            <ul class="nav-content right hide-on-med-and-down">
+              <li>
+                <a
+                  href="#!"
+                  class="dropdown-trigger"
+                  data-target="dropdown-tara"
+                >
+                  <i class="material-icons right">arrow_drop_down</i>
+                  Tara
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#!"
+                  class="dropdown-trigger"
+                  data-target="dropdown-turizam"
+                >
+                  <i class="material-icons right">arrow_drop_down</i>Turizam</a
+                >
+              </li>
+              <li>
+                <a href="smestaj.html">Smeštaj</a>
+              </li>
+              <li>
+                <a href="aktivnosti.html">Aktivnosti</a>
+              </li>
+              <li>
+                <a href="kontakt.html">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Map -->
+      <div id="mapid"></div>
+      <!-- Weather widget -->
+      <div
+        id="ac84fbc1cae25f4a5621862b6df0988a"
+        class="ww-informers-box-854753"
+      >
+        <p class="ww-informers-box-854754">
+          <a
+            href="https://world-weather.info/forecast/serbia/bajina_basta/month/"
+            >Bajina Bašta - weather forecast</a
+          ><br /><a href="https://world-weather.info/forecast/usa/houston_11/"
+            >https://world-weather.info/forecast/usa/houston_11/</a
+          >
+        </p>
+      </div>
+      <!-- Sidenav -->
+      <ul id="nav-mobile" class="sidenav grey lighten-4">
+        <li>
+          <div class="header-sidenav">
+            <span class="header white-text"
+              >Ski<span class="teal-text text-darken-4">Tara</span>j</span
+            >
+          </div>
+        </li>
+        <li>
+          <ul class="collapsible">
+            <li>
+              <div class="collapsible-header">
+                <span class="material-icons icon-circle">filter_hdr</span>Tara
+              </div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="index.html#nacionalni-park">Nacionalni park</a>
+                  </li>
+                  <li><a href="index.html#planina">Planina</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <span class="material-icons icon-circle">nature_people</span
+                >Turizam
+              </div>
+              <div class="collapsible-body">
+                <ul>
+                  <li>
+                    <a href="turizam/kaludjerske-bare.html">Kaluđerske bare</a>
+                  </li>
+                  <li>
+                    <a href="turizam/mitrovac-na-tari.html">Mitrovac na Tari</a>
+                  </li>
+                  <li><a href="turizam/zaovine.html">Zaovine</a></li>
+                  <li>
+                    <a href="turizam/racanska-sljivovica.html"
+                      >Račanska Šljivovica</a
+                    >
+                  </li>
+                  <li><a href="turizam/oslusa.html">Osluša</a></li>
+                  <li><a href="turizam/sokolina.html">Sokolina</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="smestaj.html"
+            ><span class="material-icons icon-circle">home_work</span>Smeštaj</a
+          >
+        </li>
+        <li>
+          <a href="aktivnosti.html"
+            ><span class="material-icons icon-circle">directions_bike</span
+            >Aktivnosti</a
+          >
+        </li>
+        <li>
+          <a href="kontakt.html"
+            ><span class="material-icons icon-circle">contact_mail</span
+            >Kontakt</a
+          >
+        </li>
+      </ul>
+      <!-- Dropdown Tara -->
+      <ul class="dropdown-content" id="dropdown-tara">
+        <li>
+          <a id="dp-nacionalni-park" href="index.html#nacionalni-park"
+            >Nacionalni park</a
+          >
+        </li>
+        <li><a id="dp-planina" href="index.html#planina">Planina</a></li>
+      </ul>
+      <!-- Dropdown Turizam -->
+      <ul class="dropdown-content" id="dropdown-turizam">
+        <li>
+          <a href="turizam/kaludjerske-bare.html">Kaluđerske bare</a>
+        </li>
+        <li>
+          <a href="turizam/mitrovac-na-tari.html">Mitrovac na Tari</a>
+        </li>
+        <li>
+          <a href="turizam/zaovine.html">Zaovine</a>
+        </li>
+        <li>
+          <a href="turizam/racanska-sljivovica.html">Račanska Šljivovica</a>
+        </li>
+        <li>
+          <a href="turizam/oslusa.html">Osluša</a>
+        </li>
+        <li>
+          <a href="turizam/sokolina.html">Sokolina</a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Glavni sadrzaj -->
+    <main>
+      <section class="section section-booking">
+        <div class="container">
+          <form id="booking-form" class="row" action="#!">
+            <div class="input-datepicker col s12 l3">
+              <label for="date-from">Izaberite datum</label>
+              <input
+                id="date-from"
+                type="text"
+                class="datepicker"
+                placeholder="Datum Od"
+              />
+            </div>
+            <div class="input-datepicker col s12 l3">
+              <label for="date-to">Izaberite datum</label>
+              <input
+                id="date-to"
+                type="text"
+                class="datepicker"
+                placeholder="Datum Do"
+              />
+            </div>
+            <div class="input-field col s12 l3">
+              <select id="select-area">
+                <option value="" disabled selected>Izaberite</option>
+                <option value="1">Bilo koji</option>
+                <option value="2">Kaluđerske bare</option>
+                <option value="3">Zaovine</option>
+                <option value="4">Mitrovac</option>
+                <option value="5">Osluša</option>
+                <option value="6">Račanska Šljivovica</option>
+                <option value="7">Sokolina</option>
+                <option value="8">Bajina Bašta</option>
+                <option value="8">Predov Krst</option>
+              </select>
+              <label for="select-area">Izaberite deo Tare</label>
+            </div>
+            <div class="input-field col s12 l3">
+              <select id="select-type">
+                <option value="" disabled selected>Izaberite</option>
+                <option value="1">Bilo koji</option>
+                <option value="2">Apartman</option>
+                <option value="3">Hotel</option>
+                <option value="4">Vila</option>
+                <option value="5">Planinska koliba</option>
+                <option value="6">Planinska kuća</option>
+                <option value="7">Vikendica</option>
+              </select>
+              <label for="select-type">Vrsta (tip) smeštaja</label>
+            </div>
+            <div class="col s12">
+              <input
+                id="search-btn"
+                type="submit"
+                value="Pretraži"
+                class="btn teal"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- Rezultati pretrage -->
+      <section id="search-results" class="section section-search-results hide">
+        <div class="container search-results-container">
+          <div class="row">
+            <div id="row-1" class="row">
+              <div class="col s12 l4 col-1">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      src="img/smestaj/kolibe/planinska-koliba-exclusive-tara-zaovine-1.jpg"
+                      width="300px"
+                      height="300px"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Planinska Koliba EXCLUSIVE</span>
+                    <p>
+                      Želite li nezaboravan odmor u savršenom ambijentu na Tari?
+                      Naša novoizgrađena planinska koliba Exclusive je pravo
+                      mesto za Vas. Uživajte u zimskom ambijentu pored kamina
+                      ili osetite letnje čari kupanja u jezeru i šetnjama jednom
+                      od naših najlepših planina.
+                    </p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Više</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 l4 col-1">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      src="img/smestaj/apartmani/apartmani-milekic-tara-zaovine-1.jpg"
+                      width="300px"
+                      height="300px"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Apartmani Milekić</span>
+                    <p>
+                      Naši apartmani se nalaze se u Zaovinama u naselju
+                      Milekići, pored jezera. Raspolažemo sa dva apartmana. U
+                      dvorištu se nalazi igralište za decu kao i parking.
+                      Besplatan je bežični internet. Po dogovoru možemo vam
+                      spremiti i domaću hranu. Minimalan period boravka je 3
+                      dana.
+                    </p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Više</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 l4 col-1">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      src="img/smestaj/vile/vila-tara-kaludjerske-bare-apartmani-1.jpg"
+                      width="300px"
+                      height="300px"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Vila TARA</span>
+                    <p>
+                      Kapaciteti: apartman studio (prizemlje) 3 ležaja, apartman
+                      na spratu 6 ležaja (2 sobe, dnevni boravak,kupatilo i
+                      kuhinja). Kuća za odmor je napravljena od čvrstog
+                      materijala, sa dobrom izolacijom i svom potrebnom infra
+                      strukturom.
+                    </p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Više</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="row-2" class="row">
+              <div class="col s12 l4 col-2">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      src="img/smestaj/apartmani/apartmani-andric-tara-racanska-sljivovica-1.jpg"
+                      width="300px"
+                      height="300px"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Apartmani ANDRIĆ</span>
+                    <p>
+                      Apartmani ANDRIĆ je moderno opremljen objekat na planini
+                      Tari. Raspolažemo sa 6 apartmana koja su komplet
+                      opremljeni. Udoban smeštaj, lepa terasa kao i blizina ski
+                      staze i jezera Jarevac učiniće da provedete nezaboravan
+                      odmor na ovoj planinskoj lepotici.
+                    </p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Više</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 l4 col-2">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      src="img/smestaj/vile/vila-tara-president-kaludjerske-bare-1.jpg"
+                      width="300px"
+                      height="300px"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Vila Tara President</span>
+                    <p>
+                      Vila Tara President se nalazi u samom centru Nacionalnog
+                      parka Tara, na Kaluđerskim Barama. Renovirana oktobra 2018
+                      godine, vila raspolaže sa velikim restoranom, kao i 15
+                      apartmana i soba koji su dvokrevetni ili višekrevetni.
+                    </p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Više</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 l4 col-2">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      src="img/smestaj/hoteli/hotel-omorika-tara-kaludjerske-bare-1.jpg"
+                      width="300px"
+                      height="300px"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Hotel OMORIKA</span>
+                    <p>
+                      U najlepšem delu planine Tare, na Kaludjerskim Barama,
+                      smešten je hotel ,,Omorika”*** koji svojim sadržajima
+                      pruža mogućnosti za odmor, zabavu i rekreaciju.
+                    </p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Više</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="row-3" class="row">
+              <div class="col s12 l4 col-3">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      src="img/smestaj/kuce/domacinstvo-karaklic-zaovine-tara-smestaj-1.jpg"
+                      width="300px"
+                      height="300px"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Domaćinstvo Karaklić</span>
+                    <p>
+                      Domaćinstvo Karaklić se nalazi u Zaovinama u zaseoku
+                      Jezdić, na 500 metara od jezera i 1 kilometar od Nove
+                      Vežanje. Raspolaže sa dnevnim boravkom sa kuhinjom, sobom
+                      sa francuskim ležajem i jednim krevetom i kupatilom.
+                      Smeštajna jedinica je na spratu porodične kuće u naselju
+                      Jezdić.
+                    </p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Više</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 l4 col-3">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      src="img/smestaj/vikendice/Vikendica-Monte-Queen-1-sekulic-zaovine-tara-1.jpg"
+                      width="300px"
+                      height="300px"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Vikendica Monte Queen 1</span>
+                    <p>
+                      Novoizgrađeni objekat, Monte Queen nalazi se u Zaovinama,
+                      u centru Sekulića preko puta crkve Kneza Lazara. Na
+                      udaljenosti 30 km od Bajine Bašte i na 5 km od Mitrovca.
+                    </p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Više</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 l4 col-3">
+                <div class="card">
+                  <div class="card-image">
+                    <img
+                      src="img/smestaj/kolibe/planinska-koliba-exclusive-tara-zaovine-1.jpg"
+                      width="300px"
+                      height="300px"
+                    />
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title">Planinska Koliba EXCLUSIVE</span>
+                    <p>
+                      Želite li nezaboravan odmor u savršenom ambijentu na Tari?
+                      Naša novoizgrađena planinska koliba Exclusive je pravo
+                      mesto za Vas. Uživajte u zimskom ambijentu pored kamina
+                      ili osetite letnje čari kupanja u jezeru i šetnjama jednom
+                      od naših najlepših planina.
+                    </p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Više</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="pagination center">
+              <li class="disabled">
+                <a href="#!"><i class="material-icons">chevron_left</i></a>
+              </li>
+              <li class="active"><a href="#!">1</a></li>
+              <li class="waves-effect"><a href="#!">2</a></li>
+              <li class="waves-effect"><a href="#!">3</a></li>
+              <li class="waves-effect"><a href="#!">4</a></li>
+              <li class="waves-effect"><a href="#!">5</a></li>
+              <li class="waves-effect">
+                <a href="#!"><i class="material-icons">chevron_right</i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">
+              Želite da provedete odmor na jednoj od najlepših planina Srbije?
+            </h5>
+            <p class="grey-text text-lighten-4">
+              Pogledajte našu ponudu jedinstvenog i autentičnog
+              <a
+                href="smestaj.html"
+                class="btn-flat waves-effect waves-light teal-text text-lighten-4"
+                >smeštaja</a
+              >
+              na području Tare.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">
+              Istražite Ski<span class="teal-text text-darken-4">Tara</span>j:
+            </h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="index.html">Tara</a>
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="turizam.html"
+                  >Turizam</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="smestaj.html"
+                  >Smeštaj</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="aktivnosti.html"
+                  >Aktivnosti</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="kontakt.html"
+                  >Kontakt</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright teal darken-2">
+        <div class="container valign-wrapper">
+          <div class="row valign-wrapper">
+            <div class="col l6 s12">
+              <p>
+                Za potrebe ovog projekta, sav materijal je preuzet sa
+                <a href="https://tara.rs/sr/" class="teal-text text-lighten-2"
+                  >tara.rs</a
+                >,
+                <a href="https://unsplash.com/" class="teal-text text-lighten-2"
+                  >unsplash.com</a
+                >
+                i
+                <a
+                  href="https://www.nptara.rs/ "
+                  class="teal-text text-lighten-2"
+                  >nptara.rs</a
+                >
+              </p>
+              © 2020 Copyright Ski<span class="teal-text text-darken-4"
+                >Tara</span
+              >j
+            </div>
+            <div class="col l6 s12">
+              <a class="grey-text text-lighten-4 right" href="#page-top"
+                >Početak stranice</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!-- Weather Widget -->
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      src="https://world-weather.info/wwinformer.php?userid=ac84fbc1cae25f4a5621862b6df0988a"
+    ></script>
+    <!-- Maps leaflet -->
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+    <script type="text/javascript" src="js/js-custom/smestaj.js"></script>
+  </body>
+</html>
