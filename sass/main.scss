@@ -3,6 +3,7 @@
 // Scroll smooth
 html {
   scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 // Sections
 .section {
