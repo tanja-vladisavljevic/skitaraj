@@ -20,6 +20,11 @@ $(document).ready(function() {
     indicators: true
   });
 
+  //Prevent reload
+  $("#booking-form").submit(function(e) {
+    e.preventDefault();
+  });
+
   //Dropdown init
   $(".dropdown-trigger").dropdown({
     // hover: true
@@ -52,8 +57,8 @@ $(document).ready(function() {
       $("#toc").removeClass("pinned");
     }
   });
-});
-//Pretrazi
-$("#search-btn").click(function() {
-  $("#search-results").removeClass("hide");
+  //Pretrazi
+  $("#search-btn").click(function() {
+    $("#search-results").removeClass("hide");
+  });
 });
